@@ -1,14 +1,15 @@
-import React from 'react';
+
+import banner from "../assets/image/banner.jpg"
 
 const Banner = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
-                <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                <img src={banner} className="max-w-lg rounded-lg shadow-2xl" />
                 <div>
-                    <h1 className="text-5xl font-bold">Box Office News!</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <h1 className="text-5xl font-bold text-green-600">Your Imagination, Your Style</h1>
+                    <p className="py-6">Welcome to <span className="text-green-500">Green Shop</span>, where style meets substance. Dive into a curated collection of fashion-forward threads that speak volumes.Unleash your individuality and redefine your wardrobe with each click. Elevate your style, embrace the extraordinary. Start your fashion journey with us!.</p>
+                    <button className="btn btn-primary">Start Shopping</button>
                 </div>
             </div>
         </div>
