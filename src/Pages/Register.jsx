@@ -29,7 +29,13 @@ const Register = () => {
             })
             .catch(error => {
                 console.log(error.message)
-                alert(error.message)
+                Swal.fire({
+                    position: "top",
+                    icon: "error",
+                    title: (error.message),
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
             })
     }
     return (
