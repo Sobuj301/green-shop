@@ -1,17 +1,36 @@
 
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../Components/Providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Register = () => {
 
-
-    const handleSubmit = e =>{
+    const { createUser } = useContext(AuthContext)
+    const handleSubmit = e => {
         e.preventDefault()
         const form = e.target;
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
         const photo = form.photo.value
-        console.log(name,email,password,photo)
+        console.log(name, email, password, photo)
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user)
+           
+                Swal.fire({
+                    position: "top",
+                    icon: "success",
+                    title: "Registration Successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            })
+            .catch(error => {
+                console.log(error.message)
+                alert(error.message)
+            })
     }
     return (
         <div className="flex justify-center mt-20">
@@ -56,7 +75,7 @@ const Register = () => {
                         </div>
                         <div className="relative h-11 w-full min-w-[200px]">
                             <input
-                                 name='photo'
+                                name='photo'
                                 className="w-full h-full px-3 py-3 font-sans text-sm font-normal transition-all bg-transparent border rounded-md peer border-blue-gray-200 border-t-transparent text-blue-gray-700 outline outline-0 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                                 placeholder=" " />
                             <label
