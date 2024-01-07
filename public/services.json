@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "service_name": "City Threads Boutique",
+      "service_img": "https://i.ibb.co/s2rG8cb/pic4.jpg",
+      "service_description": "Chic and trendy fashion for urban lifestyles.",
+      "service_provider_img": "https://i.ibb.co/Y2N3B2r/female1.jpg",
+      "service_provider_name": "Urban Chic Apparel",
+      "price": 10
+    },
+    {
+      "id": 2,
+      "service_name": "Vintage Vogue Emporium",
+      "service_img": "https://i.ibb.co/JzBmq1P/pic3.jpg",
+      "service_description": "Discover timeless elegance with our vintage collection.",
+      "service_provider_img": "https://i.ibb.co/802dFhJ/fe2.jpg",
+      "service_provider_name": "Timeless Treasures Co.",
+      "price": 12
+    },
+    {
+      "id": 3,
+      "service_name": "Local Luxe Boutique",
+      "service_img": "https://i.ibb.co/Tvx34r8/pic2.jpg",
+      "service_description": "Curated styles that reflect the essence of your community.",
+      "service_provider_img": "https://i.ibb.co/1fScYCG/fe-3.jpg",
+      "service_provider_name": "Community Couture Collective",
+      "price": 13
+    },
+    {
+      "id": 4,
+      "service_name": "Quaint Couture Corner",
+      "service_img": "https://i.ibb.co/TgKNGP8/pic1.jpg",
+      "service_description": "Unique and charming fashion finds for a distinctive look.",
+      "service_provider_img": "https://i.ibb.co/0jZwqrp/f4.jpg",
+      "service_provider_name": "Quirky Threads Emporium",
+      "price": 14
+    }
+  ]
+  

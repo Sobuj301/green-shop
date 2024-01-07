@@ -12,6 +12,7 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/services'>Services</NavLink>
+        
         {
             user?.email ? <>
                 <button onClick={logOut}>Logout</button>

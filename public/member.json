@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "img": "https://i.ibb.co/hBB10VF/e1.jpg",
+      "designation": "Store Manager"
+    },
+    {
+      "id": 2,
+      "name": "Daniel Rodriguez",
+      "img": "https://i.ibb.co/3WVYHp8/e2.jpg",
+      "designation": "Fashion Consultant"
+    },
+    {
+      "id": 3,
+      "name": "Sophia Chen",
+      "img": "https://i.ibb.co/syJRCwR/e3.jpg",
+      "designation": "Visual Merchandiser"
+    },
+    {
+      "id": 4,
+      "name": "Alex Thompson",
+      "img": "https://i.ibb.co/HVL9k02/e4.jpg",
+      "designation": "Customer Service Representative"
+    },
+    {
+      "id": 5,
+      "name": "Jessica Miller",
+      "img": "https://i.ibb.co/GsfgsN3/e5.jpgg",
+      "designation": "Tailoring Specialist"
+    },
+    {
+      "id": 6,
+      "name": "Ryan Patel",
+      "img": "https://i.ibb.co/0jZwqrp/f4.jpg",
+      "designation": "Inventory Coordinator"
+    },
+    {
+      "id": 7,
+      "name": "Amanda Davis",
+      "img": "https://i.ibb.co/802dFhJ/fe2.jpg",
+      "designation": "Marketing Coordinator"
+    },
+    {
+      "id": 8,
+      "name": "Jordan Carter",
+      "img": "https://i.ibb.co/1fScYCG/fe-3.jpg",
+      "designation": "Retail Sales Associate"
+    },
+    {
+      "id": 9,
+      "name": "Olivia Smith",
+      "img": "https://i.ibb.co/Y2N3B2r/female1.jpg",
+      "designation": "Store Assistant Manager"
+    }
+  ]
+  
