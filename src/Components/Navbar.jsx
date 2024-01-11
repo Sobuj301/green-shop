@@ -19,8 +19,8 @@ const Navbar = () => {
                 <details className="dropdown">
                     <summary>Dashboard</summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 gap-5">
-                       <NavLink to='/myServices'>My-services</NavLink>
-                       <NavLink to='/addServices'>Add-services</NavLink>
+                       <NavLink to='/addService'>Add-service</NavLink>
+                       <NavLink to='/manageService'>Manage Your Services</NavLink>
                        <NavLink to='/mySchedules'>My-schedules</NavLink>
                     </ul>
                 </details>

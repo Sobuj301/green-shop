@@ -5,7 +5,12 @@ import Home from "../Pages/Home";
 import Services from "../Pages/Services";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
-
+import PrivateRoute from "../Components/PrivateRoute";
+import ServiceDetails from "../Components/ServiceDetails";
+import BookNow from "../Pages/BookNow";
+import AddService from "../Pages/AddService";
+import ManageService from "../Pages/ManageService";
+import Update from "../Pages/Update";
 
 
 const router = createBrowserRouter([
@@ -29,6 +34,28 @@ const router = createBrowserRouter([
                 {
                     path:"/register",
                     element:<Register></Register>
+                },
+                {
+                    path:"/service/:id",
+                    element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+                    loader:({params})=>fetch(`http://localhost:5000/service/${params.id}`)
+                },
+                {
+                    path:"/book/:id",
+                    element:<PrivateRoute><BookNow></BookNow></PrivateRoute>,
+                    loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`)
+                },
+                {
+                    path:"/addService",
+                    element:<PrivateRoute><AddService></AddService></PrivateRoute>
+                },
+                {
+                    path:"/manageService",
+                    element:<PrivateRoute><ManageService></ManageService></PrivateRoute>
+                },
+                {
+                    path:"/update/:id",
+                    element:<PrivateRoute><Update></Update></PrivateRoute>
                 },
               ]
              },

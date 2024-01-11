@@ -3,7 +3,7 @@ import { AuthContext } from "./Providers/AuthProvider";
 import { Navigate } from "react-router-dom";
 
 
-const PrivateRoute = ({Children}) => {
+const PrivateRoute = ({children}) => {
     const {user,isLoading} = useContext(AuthContext)
 
      if(isLoading){
@@ -13,7 +13,7 @@ const PrivateRoute = ({Children}) => {
     if(!user){
      return <Navigate to="/login"></Navigate>
     }
-    return Children;
+    return children;
 };
 
 export default PrivateRoute;
