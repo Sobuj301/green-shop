@@ -15,7 +15,7 @@ const MyService = ({ service,handleDelete }) => {
                     <p>Price:${price}</p>
                     <div className="card-actions  justify-end gap-5">
                         <button onClick={()=>handleDelete(_id)} className="btn btn-primary">Delete</button>
-                       <NavLink to={`/update/${_id}`}><button className="btn btn-primary">Edit</button></NavLink>
+                       <NavLink to={`/dashboard/update/${_id}`}><button className="btn btn-primary">Edit</button></NavLink>
                     </div>
                 </div>
             </div>

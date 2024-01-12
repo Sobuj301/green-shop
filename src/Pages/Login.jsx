@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Components/Providers/AuthProvider";
 import Swal from "sweetalert2";
 
@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 const Login = () => {
 
     const {userLogin} = useContext(AuthContext)
+    const goTo = useNavigate()
 
     const handleLogin = e =>{
         e.preventDefault()
@@ -24,6 +25,7 @@ const Login = () => {
                 showConfirmButton: false,
                 timer: 1500
               });
+              goTo('/')
         })
         .catch(error =>{
             console.log(error.message)
@@ -34,6 +36,7 @@ const Login = () => {
                 showConfirmButton: false,
                 timer: 1500
               });
+              
         })
     }
     return (

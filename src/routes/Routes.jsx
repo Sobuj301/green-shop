@@ -11,6 +11,8 @@ import BookNow from "../Pages/BookNow";
 import AddService from "../Pages/AddService";
 import ManageService from "../Pages/ManageService";
 import Update from "../Pages/Update";
+import Dashboard from "../Pages/Dashboard";
+import Schedule from "../Pages/Schedule";
 
 
 const router = createBrowserRouter([
@@ -45,20 +47,39 @@ const router = createBrowserRouter([
                     element:<PrivateRoute><BookNow></BookNow></PrivateRoute>,
                     loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`)
                 },
-                {
-                    path:"/addService",
-                    element:<PrivateRoute><AddService></AddService></PrivateRoute>
-                },
-                {
-                    path:"/manageService",
-                    element:<PrivateRoute><ManageService></ManageService></PrivateRoute>
-                },
-                {
-                    path:"/update/:id",
-                    element:<PrivateRoute><Update></Update></PrivateRoute>
-                },
+                
+                
               ]
              },
+
+             {
+                path:'/dashboard',
+                element:<Dashboard></Dashboard>,
+                children:[
+                    {
+                        path:"/dashboard/addService",
+                        element:<PrivateRoute><AddService></AddService></PrivateRoute>
+                    },
+                    {
+                        path:"/dashboard/manageService",
+                        element:<PrivateRoute><ManageService></ManageService></PrivateRoute>
+                    },
+                    {
+                        path:"/dashboard/schedule",
+                        element:<PrivateRoute><Schedule></Schedule></PrivateRoute>,
+                    },
+                    {
+                        path:"/dashboard/update/:id",
+                        element:<PrivateRoute><Update></Update></PrivateRoute>,
+                        loader:({params})=>fetch(`http://localhost:5000/service/${params.id}`)
+                        
+                    },
+                   
+                    
+                ]
+                
+             }
+             
   ]);
 
 

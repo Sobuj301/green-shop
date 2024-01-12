@@ -45,6 +45,7 @@ const Services = () => {
               className=" input input-bordered w-1/2 mt-5" name="" id=""
               onChange={(e) =>setServiceName(e.target.value)}
               >
+                <option value="one choice">one choice</option>
                 {
                     servicesName?.map(name =><option key={name} value={name}>{name}</option>)
                 }
